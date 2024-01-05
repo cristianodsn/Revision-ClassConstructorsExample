@@ -9,6 +9,13 @@ namespace Rascunho
         public double Price;
         public int Quantity;
 
+        public Product(string name, double price, int quantyti)
+        {
+            Name = name;
+            Price = price;
+            Quantity = quantyti;
+        }
+
         public double TotalInStock()
         {
             return Quantity * Price;

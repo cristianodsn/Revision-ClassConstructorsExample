@@ -15,7 +15,7 @@ namespace Rascunho
             double price = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.Write("Quantity: ");
             int quantity = int.Parse(Console.ReadLine());
-            product = new Product { Name = name, Price = price, Quantity = quantity };
+            product = new Product(name, price, quantity);
             Console.WriteLine("Product data: " + product);
 
             Console.Write("Enter the number of product to be added to the stock: ");
